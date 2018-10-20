@@ -1,0 +1,16 @@
+<ion-view view-title="Categorias" style="background-image: url(../img/bg_header.png)">
+    <ion-content padding="false" scroll="true" item-width="100%" item-height="100%">
+        <div style="width: 100%; text-align: center; color: white; margin-top: 20px; font-size: 18px;">ESCOLHA UMA CATEGORIA</div>
+        <div style="margin-top: 5px; width: 100%; text-align: center;">
+            <div class="categoria" ng-repeat="categoria in categorias" ng-click="selecionar_categoria(categoria)">
+                <div class="row row-center" style="height: 100%; width: 100%;">
+                    <div class="col" style="text-align: center;">
+                        <img src="{{buscar_imagem_categoria(categoria)}}" width="50">
+                        <div style="margin-top: 10px;">{{categoria.descricao}}</div>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </ion-content>
+</ion-view>
+

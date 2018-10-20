@@ -1,0 +1,41 @@
+<ion-side-menus enable-menu-with-back-views="true">
+    <ion-side-menu-content >
+        <ion-nav-bar class="bar-stable">           
+            <ion-nav-buttons side="left">
+                <button class="button button-icon button-clear ion-navicon" menu-toggle="left"></button>
+            </ion-nav-buttons>
+        </ion-nav-bar>
+        <ion-nav-view name="menuContent"></ion-nav-view>
+    </ion-side-menu-content>
+
+    <ion-side-menu side="left">
+        <ion-content>
+            <div class="row" style="padding: 0 !important;">
+                <div class="col col-100" style="background:#E9A11B; padding: 0 !important;">
+                    <div class="row">
+                        <div class="col col-33 col-offset-33">
+                            <img src="../img/manuserbranco.png" style="border-radius:50%; background-position:center center; background-size:cover; width: 100%; border: 1px solid white;">
+                        </div>
+                    </div>
+                    <div class="row" style="margin: 0 !important; padding: 0 !important;">                        
+                        <div style="color: white; width: 100%; text-align: center; font-size: 15px;">Filipe Assad</div>                        
+                    </div>
+                    <div class="row" style="margin: 0px 0px 10px 0px !important; padding: 0 !important; font-size: 10px;">
+                        <div style="color: white; width: 100%; text-align: center;">filipeassad@gmail.com</div>
+                    </div>
+                </div>
+            </div>
+            <ion-list>
+                <ion-item menu-close href="#/app/search">
+                    Search
+                </ion-item>
+                <ion-item menu-close href="#/app/browse">
+                    Browse
+                </ion-item>
+                <ion-item menu-close href="#/app/playlists">
+                    Playlists
+                </ion-item>
+            </ion-list>
+        </ion-content>
+    </ion-side-menu>
+</ion-side-menus>
